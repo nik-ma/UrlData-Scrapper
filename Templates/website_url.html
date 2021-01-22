@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block bodyContent %}
+    <div style="display:flex;justify-content:center;margin-top:20%;">
+    <form class="form-inline" method="POST" action="/website_url/">
+    {% csrf_token %}
+  <div class="form-group mx-sm-3 mb-2">
+    <label for="inputPassword2" class="sr-only">EnterUrl</label>
+    <input type="text" class="form-control" name="input_url" placeholder="Enter url of any website">
+  </div>
+  <button type="submit" class="btn btn-primary mb-2">Get Data</button>
+</form>
+</div>
+{% endblock bodyContent %}
