@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'r(_k($bpig7e@&q51ch3e%v@sa7=@_8p#ke=fqrbjke51h1&vv'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['urlscraapper.herokuapp.com','127.0.0.1']
 
 
 # Application definition
